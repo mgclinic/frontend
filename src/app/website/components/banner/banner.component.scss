@@ -1,0 +1,35 @@
+/* homepage.component.scss */
+.hero {
+    background:url('../../../../../public/images/banner-graphics\ 5.jpg') center/cover;
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .services, .doctors, .contact {
+    padding: 40px 20px;
+  }
+  
+  .service-card, .doctor-card {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 50vh;
+    }
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  }
+  

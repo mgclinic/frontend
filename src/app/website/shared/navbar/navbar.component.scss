@@ -1,0 +1,86 @@
+.navbar{
+    padding-top:75px;
+
+}
+
+.top-nav-element{
+    margin-left: 40px;
+    font-size: 18px;
+    color: #015873;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.top-navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; // Ensures it stays above other elements
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Optional shadow for better visibility
+}
+
+
+#navbarSupportedContent ul li a,
+.example-menu-item a,
+.example-menu-item,
+.example-standalone-trigger {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#navbarSupportedContent ul li a,
+.example-menu-item a {
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navbarSupportedContent ul li a:hover,
+.example-menu-item a:hover,
+.example-menu-item:hover,
+.example-standalone-trigger:hover {
+    color: #015873 !important;
+}
+
+.example-menu {
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+
+    .example-menu-item a {
+        cursor: pointer;
+    }
+}
+
+.example-menu-item,
+.example-standalone-trigger {
+    background-color: transparent;
+    border: none;
+    user-select: none;
+    min-width: 64px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+    font-size: 16px;
+
+    i {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+}
+
+#navbarSupportedContent ul li a.active-link {
+    background-color: #015873;
+    color: #fff;
+    font-weight: 600;
+}
+

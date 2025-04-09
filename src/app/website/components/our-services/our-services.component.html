@@ -1,0 +1,67 @@
+<!-- <section class="our-services container">
+    <h2 class="section-title">Our Services</h2>
+    <h5 class="doctor-info">Provided by <strong>{{ doctorName }}</strong>, {{ specialty }}</h5>
+  
+    <div class="services-grid">
+      <mat-card *ngFor="let service of services" class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-{{ service.icon }}"></i>
+        </div>
+        <mat-card-title>{{ service.title }}</mat-card-title>
+        <mat-card-content>{{ service.description }}</mat-card-content>
+      </mat-card>
+    </div>
+  </section>
+   -->
+
+<div class="container-fluid section-service">
+  <div class="row">
+    <h1 class="primary-text mb-5 text-center">Our Service</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <mat-card class="treatment-card" appearance="outlined" routerLink="/skin-treatment" routerLinkActive="active-link">
+        <mat-card-content>
+          <mat-icon class="custom-icon">health_and_safety</mat-icon>
+          <h5>Skin Treatment</h5>
+          <p>
+            At our clinic, we offer a wide range of skin care treatments designed to enhance the health and appearance of your skin.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card class="treatment-card" appearance="outlined" routerLink="/hair-treatment" routerLinkActive="active-link">
+        <mat-card-content>
+          <mat-icon class="custom-icon">spa</mat-icon>
+          <h5>Hair Treatment</h5>
+          <p>
+            Our hair treatments are tailored to address various hair concerns, promoting healthy and beautiful hair.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card class="treatment-card" appearance="outlined" routerLink="/nail-treatment" routerLinkActive="active-link">
+        <mat-card-content>
+          <mat-icon class="custom-icon">handyman</mat-icon>
+          <h5>Nail Treatment</h5>
+          <p>
+            We provide specialized nail treatments to keep your nails healthy and looking their best.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-3">
+      <mat-card class="treatment-card" appearance="outlined" routerLink="/laser-treatment" routerLinkActive="active-link">
+        <mat-card-content>
+          <mat-icon class="custom-icon">light_mode</mat-icon>
+          <h5>Laser Treatment</h5>
+          <p>
+            Our advanced laser treatments offer effective solutions for various skin concerns, ensuring optimal results.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

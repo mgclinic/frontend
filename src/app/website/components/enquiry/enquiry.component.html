@@ -1,0 +1,61 @@
+<section class="enquiry container-fluid">
+  <div class="row">
+
+    <div class="col-md-12 padding-0 position-relative">
+
+      <div class="enquiry-background">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <mat-card class="enquiry-card">
+              <mat-card-content>
+                <h2 class="section-title">Have a Question?</h2>
+                <p class="section-description">Feel free to reach out to us, and we’ll get back to you as soon as
+                  possible.</p>
+
+                <form [formGroup]="enquiryForm" (ngSubmit)="submitEnquiry()" class="enquiry-form">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Full Name</mat-label>
+                    <input matInput formControlName="name" placeholder="Enter your name">
+                    <mat-error *ngIf="enquiryForm.get('name')?.invalid && enquiryForm.get('name')?.touched">
+                      Name is required (min 3 characters)
+                    </mat-error>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="email" placeholder="Enter your email">
+             
+                  </mat-form-field>
+
+
+                  <mat-form-field appearance="outline">
+                    <mat-label>Phone</mat-label>
+                    <input matInput type="number" formControlName="phone" placeholder="Enter your phone">
+                    <mat-error *ngIf="enquiryForm.get('phone')?.invalid && enquiryForm.get('phone')?.touched">
+                      Please enter a valid phone
+                    </mat-error>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="outline">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput rows="4" formControlName="message" placeholder="Enter your message"></textarea>
+                    <mat-error *ngIf="enquiryForm.get('message')?.invalid && enquiryForm.get('message')?.touched">
+                      Message is required (min 10 characters)
+                    </mat-error>
+                  </mat-form-field>
+
+                  <button mat-raised-button color="primary" type="submit" [disabled]="enquiryForm.invalid">Submit
+                    Enquiry</button>
+                </form>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+      <div class="enquiry-overlay">
+
+      </div>
+    </div>
+
+  </div>
+</section>

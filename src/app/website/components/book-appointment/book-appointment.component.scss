@@ -1,0 +1,18 @@
+.book-appointment{
+  background-image:url('../../../../../public/images/appoint-pattern.png');
+  mat-card{
+    border-radius:20px;
+  }
+  .appointment-form{
+    padding:40px 10px;
+    mat-form-field{
+      width:100%;
+    }
+
+  } 
+
+  .appoint-img{
+    padding-right:0;
+  }
+}
+

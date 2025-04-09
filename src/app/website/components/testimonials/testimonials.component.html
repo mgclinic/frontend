@@ -1,0 +1,24 @@
+<section class="testimonials container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+        <h2 class="section-title">Patients speak</h2>
+  <owl-carousel-o [options]="carouselOptions">
+    <ng-container *ngFor="let testimonial of testimonials">
+      <ng-template carouselSlide>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i *ngFor="let star of getStarArray(testimonial.rating)" class="bi bi-star-fill"></i>
+            <i *ngIf="hasHalfStar(testimonial.rating)" class="bi bi-star-half"></i>
+          </div>
+          <p class="testimonial-feedback">{{ testimonial.message }}</p>
+          <div class="testimonial-footer">
+            <h4>{{ testimonial.name }}</h4>
+            <p>{{ testimonial.location }}</p>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+    </div>
+  </div>
+</section>
