@@ -1,0 +1,33 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .example-sidenav-content {
+    display: block;
+    height: 100%;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+    width:300px;
+    background-color: #fff;
+  }
+
+  .mat-drawer-container{
+    width:100%;
+  }
+
+  .sticky-bar{
+    position: sticky;
+    top:0;
+    z-index: 9;
+  }

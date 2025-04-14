@@ -1,0 +1,56 @@
+.clinic-timing {
+    padding: 60px 0;
+    text-align: center;
+    background-image: url('../../../../../public/images/brushed-alum.png');
+
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+  
+    .doctor-info {
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  
+    .timing-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  
+    .timing-card {
+      background: #f8f9fa;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      .timing-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+  
+      .session {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
+  
+      .time {
+        font-size: 16px;
+        color: #555;
+      }
+    }
+  }
+  

@@ -1,0 +1,35 @@
+.treatment-card {
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  padding: 20px;
+  height: 245px; // Fixed height
+}
+
+.treatment-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.treatment-card mat-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.treatment-card h5 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.treatment-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+.custom-icon {
+  color: #015873;
+}
+
+.section-service{
+  margin:60px auto;
+}

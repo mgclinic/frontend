@@ -1,0 +1,23 @@
+<section class="clinic-timing primary-bg">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h2 class="section-title">Clinic Timings</h2>
+        <h5 class="doctor-info">Consultation with <strong>{{ doctorName }}</strong>, {{ specialty }}</h5>
+
+        <div class="timing-grid">
+          <div class="timing-card" *ngFor="let timing of timings">
+            <div class="timing-icon primary-text">
+              <i class="bi bi-{{ timing.icon }}"></i>
+            </div>
+            <h4 class="session">{{ timing.session }}</h4>
+            <p class="time">{{ timing.time }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+          <img src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744400793/timeban_easf1y.jpg" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>

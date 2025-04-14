@@ -1,0 +1,18 @@
+.book-appointment{
+  background-image:url('https://res.cloudinary.com/dmcobg5ev/image/upload/v1744612694/appoint-pattern_1_yeskdi.png');
+  mat-card{
+    border-radius:20px;
+  }
+  .appointment-form{
+    padding:40px 10px;
+    mat-form-field{
+      width:100%;
+    }
+
+  } 
+
+  .appoint-img{
+    padding-right:0;
+  }
+}
+

@@ -1,0 +1,94 @@
+<app-header [currentBreadcrumb]="'About'"></app-header>
+
+<div class="container-fluid my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <mat-card class="shadow-lg p-4">
+          <div class="row align-items-center">
+            <!-- Doctor's Image -->
+            <div class="col-md-4 text-center">
+              <img
+                src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744400792/abtdrrohal_nbixtb.jpg" alt="Clinic Image"
+                alt="Dr. Rohal Chandrakar"
+                class="rounded-circle doctor-img"
+                width="180"
+              />
+            </div>
+  
+            <!-- Doctor's Info -->
+            <div class="col-md-8">
+              <h2 class="fw-bold text-primary">Dr. Rohal Chandrakar</h2>
+              <p class="text-muted">
+                <strong>MBBS, MD (Dermatology), Fellowship in Cosmetic Dermatology</strong>
+              </p>
+              <p>
+                Dr. Rohal Chandrakar is a highly experienced dermatologist dedicated to
+                enhancing skin health with cutting-edge treatments. His expertise spans across
+                cosmetic dermatology, laser procedures, and advanced skin rejuvenation
+                therapies.
+              </p>
+            </div>
+          </div>
+        </mat-card>
+  
+        <!-- Clinic Overview -->
+        <mat-card class="mt-4 shadow-sm p-4">
+          <h3 class="text-secondary">Welcome to MG Clinic</h3>
+          <mat-divider></mat-divider>
+          <p class="mt-3">
+            At <strong>MG Clinic</strong>, we prioritize patient well-being, offering
+            personalized treatments for skin, hair, and nail conditions. Our clinic combines
+            medical expertise with state-of-the-art technology to deliver top-tier dermatological
+            care.
+          </p>
+        </mat-card>
+  
+        <!-- Services Section -->
+        <mat-card class="mt-4 shadow-sm p-4">
+          <h3 class="text-secondary">Our Specialties</h3>
+          <mat-divider></mat-divider>
+          <div class="row mt-3">
+            <div class="col-md-4 mb-3">
+              <mat-card class="p-3 specialty-card">
+                <h5 class="text-primary">Skin Treatments</h5>
+                <p>Acne, Melasma, Psoriasis, Eczema, Urticaria, Fungal Infections.</p>
+              </mat-card>
+            </div>
+            <div class="col-md-4 mb-3">
+              <mat-card class="p-3 specialty-card">
+                <h5 class="text-primary">Hair Treatments</h5>
+                <p>Alopecia, Dandruff, Scalp Infections, PRP Therapy.</p>
+              </mat-card>
+            </div>
+            <div class="col-md-4 mb-3">
+              <mat-card class="p-3 specialty-card">
+                <h5 class="text-primary">Laser & Aesthetic</h5>
+                <p>Laser Hair Removal, Scar Revision, Botox, Skin Tightening.</p>
+              </mat-card>
+            </div>
+          </div>
+        </mat-card>
+  
+        <!-- Appointment CTA -->
+        <mat-card class="mt-4 text-center appointment-card shadow-lg">
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <mat-card class="rounded text-center" >
+                        <mat-card-content>
+                          <!-- <mat-icon class="custom-icon">health_and_safety</mat-icon> -->
+                          <h5>Why Choose MG Clinic for Aesthetic Procedures?</h5>
+                          <p>
+                            At MG Clinic, Dr. Rohal Chandrakar uses state-of-the-art technology and the latest techniques to ensure the best outcomes for all aesthetic procedures. Whether you're looking to rejuvenate your skin, address scars, or tighten and lift sagging areas, we provide personalized treatment plans to achieve the results you desire in a safe and comfortable environment.
+                          </p>
+                          <button mat-raised-button color="primary" type="submit" (click)="gotoAppointment()">Schedule Your Consultation Today!</button>
+                        </mat-card-content>
+                      </mat-card>
+                </div>
+            </div>
+        </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  

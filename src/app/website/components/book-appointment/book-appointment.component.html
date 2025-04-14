@@ -1,0 +1,95 @@
+<section class="book-appointment primary-bg">
+
+  <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-8 py-5">
+          <h2 class="section-title">Book an Appointment</h2>
+          <h5 class="doctor-info">Consultation with <strong>{{ doctorName }}</strong></h5>
+          <p class="description">Fill out the form below to schedule an appointment with our specialist. We look forward to serving you.</p>
+  
+          <mat-card>
+            <mat-card-content>
+            <form [formGroup]="appointmentForm" (ngSubmit)="submitForm()" class="appointment-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Full Name</mat-label>
+                    <input matInput formControlName="name" placeholder="Enter your name">
+                    <mat-error *ngIf="appointmentForm.get('name')?.invalid && appointmentForm.get('name')?.touched">
+                      Name is required (min 3 characters)
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="email" placeholder="Enter your email">
+                    <mat-error *ngIf="appointmentForm.get('email')?.invalid && appointmentForm.get('email')?.touched">
+                      Please enter a valid email
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Phone Number</mat-label>
+                    <input matInput type="tel" formControlName="phone" placeholder="Enter your phone number">
+                    <mat-error *ngIf="appointmentForm.get('phone')?.invalid && appointmentForm.get('phone')?.touched">
+                      Enter a valid 10-digit phone number
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Appointment Date</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="date">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-error *ngIf="appointmentForm.get('date')?.invalid && appointmentForm.get('date')?.touched">
+                      Date is required
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Select Time Slot</mat-label>
+                    <mat-select formControlName="time">
+                      <mat-option *ngFor="let time of availableTimeSlots" [value]="time">
+                        {{ time }}
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="appointmentForm.get('time')?.invalid && appointmentForm.get('time')?.touched">
+                      Please select a time slot
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-label class="text-dark">Gender</mat-label>
+                  <mat-radio-group formControlName="gender">
+                    <mat-radio-button value="MALE">Male</mat-radio-button>
+                    <mat-radio-button value="FEMALE">Female</mat-radio-button>
+                    <mat-radio-button value="OTHERS">Others</mat-radio-button>
+                  </mat-radio-group>
+                </div>
+              </div>
+              <button mat-raised-button class="primary-bg" type="submit" [disabled]="appointmentForm.invalid">Book Appointment</button>
+            </form>
+          </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-md-4 appoint-img mt-5 mb-5">
+          <img class="img-fluid" src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744400793/bookban_parvyz.jpg" alt="Clinic Image" />
+          <!-- <div class="contact-info">
+            <h4>Contact Us</h4>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Email:</strong> infomgclinic.com</p>
+            <p><strong>Address:</strong> 1234 Street Name, City, State, 56789</p>
+          </div> -->
+        </div>
+      </div>
+  </div>
+
+</section>

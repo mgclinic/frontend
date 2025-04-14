@@ -1,0 +1,44 @@
+.enquiry{
+  padding-top:60px;
+  padding-bottom:60px;
+  overflow-x: hidden;
+  .enquiry-form{
+    mat-form-field{
+      display:flex;
+      width:100%;
+      margin-bottom:20px; 
+    }
+  }
+}
+
+.padding-left-0{
+  padding-left:0;
+}
+
+.enquiry-background{
+  background-image: url('https://res.cloudinary.com/dmcobg5ev/image/upload/v1744404374/faqban_phwst6.jpg');
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.enquiry-card{
+  border-radius: 20px;
+  text-align:center;
+  z-index:3;
+  margin: 75px 10px;
+}
+
+.padding-0{
+  padding:0
+}
+
+.enquiry-overlay{
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+}
+
