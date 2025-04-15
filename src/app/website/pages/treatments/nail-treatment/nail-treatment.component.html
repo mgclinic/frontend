@@ -3,14 +3,39 @@
 <section 
   class="hero secondary-bg d-flex flex-column align-items-center justify-content-center text-center">
   <div class="img-fluid hero-content">
-   <img src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744323472/nailbanner_ukzbue.jpg" alt="banner">  
+   <img class="img-fluid" src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744323472/nailbanner_ukzbue.jpg" alt="banner">  
   </div>
 </section>
 
 
 <div class="secondary-bg">
   <div class="container-fluid">
-    <section>
+
+
+    
+    <div class="row py-5 text-center">
+      <div class="col-md-3 text-end">
+        <h2>
+          Nail Treatments<br/>
+          <i class="bi bi-arrow-right"></i>
+        </h2>
+      </div>
+      <div class="col-md-9 treatments-list">
+        <div class="card shadow-sm treatment-item" (click)="scrollToSection('nail-psoriasis')">
+          <div class="card-body">Nail Psoriasis</div>
+        </div>
+        <div class="card shadow-sm treatment-item" (click)="scrollToSection('ingrown-toenail')">
+          <div class="card-body">Ingrown Toenail</div>
+        </div>
+        <div class="card shadow-sm treatment-item" (click)="scrollToSection('fungal-nail-infection')">
+          <div class="card-body">Fungal Nail Infection</div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section id="nail-psoriasis">
       <div class="row py-5">
         <h2 class="mb-3 primary-bg py-1 px-2">Nail Psoriasis</h2>
         <!-- Content Section -->
@@ -65,7 +90,7 @@
     </section>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="ingrown-toenail">
     <section>
       <div class="row secondary-bg py-5">
         <h2 class="mb-4 primary-bg text-justify">Ingrown Toenail (Onychocryptosis)</h2>
@@ -119,7 +144,7 @@
     </section>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="fungal-nail-infection">
     <section>
       <div class="row secondary-bg py-5">
         <h2 class="mb-4 primary-bg text-justify">Fungal Nail Infection (Onychomycosis)</h2>

@@ -3,13 +3,49 @@
 <section 
   class="hero secondary-bg d-flex flex-column align-items-center justify-content-center text-center">
   <div class="img-fluid hero-content">
-   <img src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744323476/skinbanner_szij3p.jpg" alt="banner">  
+   <img src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744323476/skinbanner_szij3p.jpg" class="img-fluid" alt="banner">  
   </div>
 </section>
 
+
+
 <div class="secondary-bg">
 <div class="container-fluid">
-  <section>
+
+
+  <div class="row py-5 text-center">
+    <div class="col-md-3 text-end">
+      <h2>
+        Skin Treatments<br/>
+        <i class="bi bi-arrow-right"></i>
+      </h2>
+    </div>
+    <div class="col-md-9 treatments-list">
+      <div class="card shadow-sm treatment-item" (click)="scrollToSection('acne')">
+        <div class="card-body">Acne</div>
+      </div>
+      <div class="card shadow-sm treatment-item" (click)="scrollToSection('melasma')">
+        <div class="card-body">MELASMA</div>
+      </div>
+      <div class="card shadow-sm treatment-item" (click)="scrollToSection('eczema')">
+        <div class="card-body">ECZEMA</div>
+      </div>
+      <div class="card shadow-sm treatment-item" (click)="scrollToSection('psoriasis')">
+        <div class="card-body">Psoriasis</div>
+      </div>
+      <div class="card shadow-sm treatment-item" (click)="scrollToSection('vitiligo')">
+        <div class="card-body">VITILIGO</div>
+      </div>
+      <div class="card shadow-sm treatment-item" (click)="scrollToSection('psoriasis')">
+        <div class="card-body">Psoriasis</div>
+      </div>
+      <div class="card shadow-sm treatment-item" (click)="scrollToSection('Keloids')">
+        <div class="card-body">Keloids</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="acne">
     
     <div class="row  py-5">
       <h2 class="primary-bg py-1 px-2">ACNE</h2>
@@ -95,7 +131,7 @@
 </div>
 
 <div class="container-fluid">
-  <section>
+  <section id="melasma">
     <div class="row secondary-bg py-5">
       <h2 class="mb-4 primary-bg text-justify">MELASMA</h2>
      
@@ -181,7 +217,7 @@
 </div>
 
 <div class="container-fluid">
-  <section>
+  <section id="eczema">
     <div class="row secondary-bg py-5">
       <!-- Content Section -->
       <h2 class="mb-4 primary-bg">ECZEMA</h2>
@@ -257,7 +293,7 @@
 </div>
 
 <div class="container-fluid">
-  <section>
+  <section id="psoriasis">
     <div class="row secondary-bg py-5">
       <h2 class="mb-4 primary-bg text-justify">Psoriasis</h2>
       
@@ -336,7 +372,7 @@
 </div>
 
 <div class="container-fluid">
-  <section>
+  <section id="vitiligo">
     <div class="row secondary-bg py-5">
       <h2 class="mb-4 primary-bg">VITILIGO</h2>
       <!-- Content Section -->
@@ -443,7 +479,7 @@
 </div>
 
 <div class="container-fluid">
-    <section>
+    <section id="psoriasis">
         <div class="row secondary-bg py-5">
         <h2 class="mb-4 primary-bg text-justify">Psoriasis</h2>
         
@@ -522,7 +558,7 @@
   </div>
   
   <div class="container-fluid">
-    <section>
+    <section id="Keloids">
       <div class="row secondary-bg py-5">
         <h2 class="mb-4 primary-bg">Keloids</h2>
         <!-- Content Section -->

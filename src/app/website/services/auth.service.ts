@@ -81,4 +81,9 @@ export class AuthService {
     const parts = token.split('.');
     return parts.length === 3;
   }
+
+
+  getAllCount(){
+    return this.http.get(environment.apiUrl+'users/count')
+  }
 }

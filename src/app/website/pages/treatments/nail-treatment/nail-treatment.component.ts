@@ -12,4 +12,10 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class NailTreatmentComponent {
 
+  scrollToSection(section:string) {
+    window.location.hash = section;
+  }
+
+
 }
+

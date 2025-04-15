@@ -13,4 +13,10 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class HairTreatmentComponent {
 
+
+  
+  scrollToSection(section:string) {
+    window.location.hash = section;
+  }
+
 }

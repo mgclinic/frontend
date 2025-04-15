@@ -3,14 +3,42 @@
 <section 
   class="hero secondary-bg d-flex flex-column align-items-center justify-content-center text-center">
   <div class="img-fluid hero-content">
-   <img src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744323472/hairbanner_iudgnr.jpg" alt="banner">  
+   <img src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744323472/hairbanner_iudgnr.jpg" class="img-fluid" alt="banner">  
   </div>
 </section>
 
 
 <div class="secondary-bg">
     <div class="container-fluid">
-      <section>
+
+
+      <div class="row py-5 text-center">
+        <div class="col-md-3 text-end">
+          <h2>
+            Hair Treatments<br/>
+            <i class="bi bi-arrow-right"></i>
+          </h2>
+        </div>
+        <div class="col-md-9 treatments-list">
+          <div class="card shadow-sm treatment-item" (click)="scrollToSection('androgenetic-alopecia')">
+            <div class="card-body">Androgenetic Alopecia</div>
+          </div>
+          <div class="card shadow-sm treatment-item" (click)="scrollToSection('telogen-effluvium')">
+            <div class="card-body">Telogen Effluvium</div>
+          </div>
+          <div class="card shadow-sm treatment-item" (click)="scrollToSection('seborrheic-dermatitis')">
+            <div class="card-body">Seborrheic Dermatitis</div>
+          </div>
+          <div class="card shadow-sm treatment-item" (click)="scrollToSection('alopecia-areata')">
+            <div class="card-body">Alopecia Areata</div>
+          </div>
+          <div class="card shadow-sm treatment-item" (click)="scrollToSection('scalp-fungal-infections')">
+            <div class="card-body">Scalp Fungal Infections</div>
+          </div>
+        </div>
+      </div>
+
+      <section id="androgenetic-alopecia">
         <div class="row py-5">
           <h2 class="mb-3 primary-bg py-1 px-2">Androgenetic Alopecia (Pattern Hair Loss)</h2>
           <!-- Content Section -->
@@ -64,7 +92,7 @@
       </section>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="telogen-effluvium">
       <section>
         <div class="row secondary-bg py-5">
           <h2 class="mb-4 primary-bg text-justify">Telogen Effluvium</h2>
@@ -121,7 +149,7 @@
       </section>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="seborrheic-dermatitis">
       <section>
         <div class="row secondary-bg py-5">
           <h2 class="mb-4 primary-bg text-justify">Seborrheic Dermatitis (Scalp Dandruff / Inflammation)</h2>
@@ -170,7 +198,7 @@
       </section>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="alopecia-areata">
       <section>
         <div class="row secondary-bg py-5">
           <h2 class="mb-4 primary-bg text-justify">Alopecia Areata</h2>
@@ -225,8 +253,8 @@
       </section>
     </div>
 
-    <div class="container-fluid">
-      <section>
+    <div class="container-fluid" id="scalp-fungal-infections">
+      <section id="">
         <div class="row secondary-bg py-5">
           <h2 class="mb-4 primary-bg text-justify">Scalp Fungal Infections (Tinea Capitis)</h2>
           <!-- Content Section -->

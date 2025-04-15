@@ -11,4 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class LaserTreatmentComponent {
 
+  scrollToSection(section:string) {
+    window.location.hash = section;
+  }
 }
