@@ -11,10 +11,11 @@ import { TimingComponent } from "../../components/timing/timing.component";
 import { TestimonialsComponent } from "../../components/testimonials/testimonials.component";
 import { NewsletterComponent } from "../../components/newsletter/newsletter.component";
 import { FaqsComponent } from '../../components/faqs/faqs.component';
+import { BeforeAfterComponent } from "../../components/before-after/before-after.component";
 
 @Component({
   selector: 'app-homepage',
-  imports: [MatButtonModule, CommonModule, BannerComponent, BannerComponent, AboutClinicComponent, AboutDoctorComponent, BookAppointmentComponent, OurServicesComponent, EnquiryComponent, TimingComponent, TestimonialsComponent, FaqsComponent],
+  imports: [MatButtonModule, CommonModule, BannerComponent, BannerComponent, AboutClinicComponent, AboutDoctorComponent, BookAppointmentComponent, OurServicesComponent, EnquiryComponent, TimingComponent, TestimonialsComponent, FaqsComponent, BeforeAfterComponent],
   standalone: true,
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
