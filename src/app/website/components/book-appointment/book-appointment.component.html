@@ -68,14 +68,14 @@
                 </div>
                 <div class="col-md-6">
                   <mat-label class="text-dark">Gender</mat-label>
-                  <mat-radio-group formControlName="gender">
+                  <mat-radio-group class="mobile-radio" formControlName="gender">
                     <mat-radio-button value="MALE">Male</mat-radio-button>
                     <mat-radio-button value="FEMALE">Female</mat-radio-button>
                     <mat-radio-button value="OTHERS">Others</mat-radio-button>
                   </mat-radio-group>
                 </div>
               </div>
-              <button mat-raised-button class="primary-bg" type="submit" [disabled]="appointmentForm.invalid">Book Appointment</button>
+              <button mat-raised-button class="primary-bg mt-15" type="submit" [disabled]="appointmentForm.invalid">Book Appointment</button>
             </form>
           </mat-card-content>
           </mat-card>

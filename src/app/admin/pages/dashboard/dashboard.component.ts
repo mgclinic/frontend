@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../../website/services/auth.service';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +13,7 @@ export class DashboardComponent implements OnInit {
 
   data:any
 
-  constructor(private as:AuthService){
+  constructor(private as:AuthService,private router:Router){
 
   }
 
@@ -24,7 +25,7 @@ export class DashboardComponent implements OnInit {
   }
 
   goto(url:any){
-   
+    this.router.navigate(['admin-panel/'+url]);
   }
 
 }

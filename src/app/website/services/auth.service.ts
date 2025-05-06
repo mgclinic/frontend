@@ -31,10 +31,14 @@ export class AuthService {
     );
   }
 
-  logout() {
-    if (this.isLocalStorageAvailable()) {
-      localStorage.removeItem('authToken');
-    }
+  logout(): Observable<void> {
+    return new Observable<void>((observer) => {
+      if (this.isLocalStorageAvailable()) {
+        localStorage.removeItem('authToken');
+      }
+      observer.next();
+      observer.complete();
+    });
   }
 
   isLoggedIn(): boolean {

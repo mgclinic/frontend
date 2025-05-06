@@ -7,8 +7,38 @@
 @media (max-width: 768px) {
     html{
         overflow-x: hidden!important;
-        margin: auto 15px;
     }
+
+    .d-none-phone{
+        display: none;
+    }
+
+    .mb-15{
+        margin-bottom:15px
+    }
+
+    .mobile-radio{
+        display: flex;
+        margin: 10px -10px;
+    }
+
+    .mt-15{
+        margin-top:15px;
+    }
+
+    .faqs-section{
+        padding: 25px 5px 10px 5px!important;
+    }
+    .mobile-text-center{
+        text-align: center!important;
+    }
+
+    .treatment-item{
+        margin:5px!important;
+    }
+    .example-sidenav-content {
+        overflow-y: scroll!important;
+      }
 }
 
 html, body{
