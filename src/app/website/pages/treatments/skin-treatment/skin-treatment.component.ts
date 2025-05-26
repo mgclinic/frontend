@@ -18,7 +18,7 @@ export class SkinTreatmentComponent {
   data = [
     {
       url:'acne',
-      label:'Acne'
+      label:'ACNE'
     },
     {
       url:'melasma',
@@ -30,7 +30,7 @@ export class SkinTreatmentComponent {
     },
     {
       url:'psoriasis',
-      label:'Psoriasis'
+      label:'PSORIASIS'
     },
     {
       url:'vitiligo',
@@ -38,11 +38,11 @@ export class SkinTreatmentComponent {
     },
     {
       url:'psoriasis',
-      label:'psoriasis'
+      label:'PSORIASIS'
     },
     {
       url:'Keloids',
-      label:'Keloids'
+      label:'KELOIDS'
     },
   ]
 
