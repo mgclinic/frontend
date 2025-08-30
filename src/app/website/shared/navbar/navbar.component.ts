@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {CdkMenu, CdkMenuItem, CdkMenuTrigger} from '@angular/cdk/menu';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -11,4 +11,13 @@ import { RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
 
+constructor(private router: Router) {}
+
+book() {
+  this.router.navigate(['/book-appointment']);
+}
+
+  call(){
+    window.location.href = 'tel:+9171441657';
+  }
 }

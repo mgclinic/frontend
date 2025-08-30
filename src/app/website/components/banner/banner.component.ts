@@ -22,4 +22,9 @@ export class BannerComponent {
     this.toastr.success('Redirecting to appointment booking!', 'Success');
     // Logic for redirection or opening booking form
   }
+
+
+  isMobileSize(): boolean {
+    return window.innerWidth <= 768;
+  }
 }

@@ -84,3 +84,16 @@
     font-weight: 600;
 }
 
+
+@media only screen and (max-width: 768px) {
+   .display-none-mobile{
+        display: none!important;
+    }    
+}
+
+
+@media only screen and (min-width: 768px) {
+   .display-none-desktop{
+        display: none!important;
+    }   
+}

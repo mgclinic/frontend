@@ -7,7 +7,7 @@
                       <img class="img-fluid" width="70px" src="/images/logo.png" alt="logo" /> MG Clinic
                   </a>
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center display-none-mobile">
                   <a href="tel:+919171441657" class="top-nav-element">
                       <i class="bi bi-telephone-fill"></i> +91 9171441657
                   </a>
@@ -17,6 +17,25 @@
                   <div class="top-nav-element" routerLink="/book-appointment" routerLinkActive="active-link">
                       <i class="bi bi-bookmark-check-fill"></i> Book An Appointment
                   </div>
+              </div>
+              <div class="d-flex align-items-center display-none-desktop">
+
+                <button type="button" class="btn btn-primary primary-bg ms-4" (click)="book()" >
+                  Book
+                </button>
+                <button type="button" class="btn btn-primary primary-bg ms-4" (click)="call()" >
+                  Call
+                </button>
+
+                  <!-- <a href="tel:+919171441657" class="top-nav-element">
+                      <i class="bi bi-telephone-fill"></i> +91 9171441657
+                  </a>
+                  <div class="top-nav-element" routerLink="/contact" routerLinkActive="active-link">
+                      <i class="bi bi-geo-alt-fill"></i> Clinic Location
+                  </div>
+                  <div class="top-nav-element" routerLink="/book-appointment" routerLinkActive="active-link">
+                      <i class="bi bi-bookmark-check-fill"></i> Book An Appointment
+                  </div> -->
               </div>
           </div>
       </div>

@@ -11,6 +11,12 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+   html{
+    margin:0!important
+   }   
+}
+
 html, body{
     font-family: "Poppins", sans-serif!important;
     height:100%;
@@ -24,8 +30,11 @@ $primary-color: #015873;
 $secondary-color: #fff1ed;
 
 .primary-bg{
-    background-color:$primary-color;
-    color:#fff;
+    background-color:$primary-color!important;
+    color:#fff!important;
+    outline: none;
+    border:0!important;
+    box-shadow: none;
 }
 
 .secondary-bg{
@@ -39,3 +48,4 @@ $secondary-color: #fff1ed;
 .secondary-text{
     color:$secondary-color
 }
+
