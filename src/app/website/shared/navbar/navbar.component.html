@@ -1,69 +1,97 @@
+<!-- Top Bar Section -->
 <section class="top-navbar">
   <div class="container-fluid">
-      <div class="row">
-          <div class="col-md-12 d-flex justify-content-between">
-              <div class="">
-                  <a class="navbar-brand" routerLink="/" routerLinkActive="active-link">
-                      <img class="img-fluid" width="70px" src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744617926/logo_mhutcw.png" alt="logo" /> MG Clinic
-                  </a>
-              </div>
-              <div class="d-flex align-items-center">
-                  <a href="tel:+919171441657" class="top-nav-element">
-                      <i class="bi bi-telephone-fill"></i> +91 8305280090
-                  </a>
-                  <div class="top-nav-element d-none-phone" routerLink="/contact" routerLinkActive="active-link">
-                      <i class="bi bi-geo-alt-fill"></i> Clinic Location
-                  </div>
-                  <div class="top-nav-element d-none-phone" routerLink="/book-appointment" routerLinkActive="active-link">
-                      <i class="bi bi-bookmark-check-fill"></i> Book An Appointment
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-between">
+        <div class="navbar p-0">
+          <!-- Toggle button for offcanvas -->
+          <button
+            class="navbar-toggler display-none-desktop"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <a class="navbar-brand mobile-logo" routerLink="/" routerLinkActive="active-link">
+            <img
+              class="img-fluid"
+              width="70px"
+              src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744617926/logo_mhutcw.png"
+              alt="logo"
+            />
+            MG Clinic
+          </a>
+        </div>
+
+        <!-- Right-side quick links -->
+        <div class="d-flex align-items-center display-none-mobile">
+          <a href="tel:+919171441657" class="top-nav-element">
+            <i class="bi bi-telephone-fill"></i> +91 8305280090
+          </a>
+          <div class="top-nav-element d-none-phone" routerLink="/contact" routerLinkActive="active-link">
+            <i class="bi bi-geo-alt-fill"></i> Clinic Location
+          </div>
+          <div class="top-nav-element d-none-phone" routerLink="/book-appointment" routerLinkActive="active-link">
+            <i class="bi bi-bookmark-check-fill"></i> Book An Appointment
+          </div>
+        </div>
+             <div class="d-flex align-items-center display-none-desktop">
+
+                <button type="button" class="btn btn-primary primary-bg ms-4" (click)="book()" >
+                  Book
+                </button>
+                <button type="button" class="btn btn-primary primary-bg ms-4" (click)="call()" >
+                  Call
+                </button>
+              </div>
+
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+  <div class="container-fluid">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <!-- Offcanvas menu (left side) -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/" routerLinkActive="active-link">Home</a>
+            <a class="nav-link active" routerLink="/" routerLinkActive="active-link">Home</a>
           </li>
-        
-
           <li class="nav-item">
             <a class="nav-link" routerLink="/about" routerLinkActive="active-link">About</a>
           </li>
           <li class="nav-item dropdown">
-            <button [cdkMenuTriggerFor]="menu" class="example-standalone-trigger">
-              Treatments <i class="bi bi-caret-down-fill"></i>
-            </button>
-
-          <ng-template #menu>
-            <div class="example-menu" cdkMenu>
-              <button class="example-menu-item" cdkMenuItem>
-                <a routerLink="/skin-treatment" routerLinkActive="active-link">Skin Care</a>
-              </button>
-              <button class="example-menu-item" cdkMenuItem>
-                <a routerLink="/hair-treatment" routerLinkActive="active-link">Hair Care</a>
-              </button>
-              <button class="example-menu-item" cdkMenuItem>
-                <a routerLink="/nail-treatment" routerLinkActive="active-link">Nail Care</a>
-              </button>
-              <button class="example-menu-item" cdkMenuItem>
-                <a routerLink="/laser-treatment" routerLinkActive="active-link">Laser</a>
-              </button> 
-            </div>
-          </ng-template>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Treatments
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/skin-treatment">Skin Care</a></li>
+              <li><a class="dropdown-item" routerLink="/hair-treatment">Hair Care</a></li>
+              <li><a class="dropdown-item" routerLink="/nail-treatment">Nail Care</a></li>
+              <li><a class="dropdown-item" routerLink="/laser-treatment">Laser</a></li>
+            </ul>
           </li>
-          
-
           <li class="nav-item">
             <a class="nav-link" routerLink="/procedures" routerLinkActive="active-link">Procedures</a>
           </li>
@@ -71,7 +99,7 @@
             <a class="nav-link" routerLink="/contact" routerLinkActive="active-link">Contact</a>
           </li>
         </ul>
-
       </div>
     </div>
-  </nav>
+  </div>
+</nav>

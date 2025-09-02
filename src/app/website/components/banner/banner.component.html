@@ -9,7 +9,7 @@
 
 
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+<div id="carouselExampleIndicators" class="carousel slide display-none-mobile" >
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -35,6 +35,27 @@
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div id="carouselExampleIndicators" class="carousel slide display-none-desktop" data-bs-ride="true">
+  <div class="carousel-indicators display-none-mobile">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://res.cloudinary.com/dmcobg5ev/image/upload/v1744400794/abtclinic_e2ypgi.jpg" class="d-block w-100" alt="slide1">
+    </div>
+  </div>
+  <button  class="carousel-control-prev display-none-mobile" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button  class="carousel-control-next display-none-mobile" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
