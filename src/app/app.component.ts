@@ -28,17 +28,17 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationStart) {
-        this.loaderService.show(); 
-      } else if (
-        event instanceof NavigationEnd ||
-        event instanceof NavigationCancel ||
-        event instanceof NavigationError
-      ) {
-        this.loaderService.hide(); 
-      }
-    });
+    // this.router.events.subscribe(event => {
+    //   if (event instanceof NavigationStart) {
+    //     this.loaderService.show(); 
+    //   } else if (
+    //     event instanceof NavigationEnd ||
+    //     event instanceof NavigationCancel ||
+    //     event instanceof NavigationError
+    //   ) {
+    //     this.loaderService.hide(); 
+    //   }
+    // });
     // Optional: only needed if you're modifying anything else in the view here
     // this.cdref.detectChanges();
   }
