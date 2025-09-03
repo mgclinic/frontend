@@ -13,8 +13,8 @@ export class TimingComponent {
   specialty = 'Dermatologist';
 
   timings = [
-    { session: 'Morning', time: '10:00 AM - 1:00 PM', icon: 'sun' },
-    { session: 'Evening', time: '5:00 PM - 8:00 PM', icon: 'moon' }
+    { session: 'Morning', time: '10:30 AM - 4:00 PM', icon: 'sun' },
+    { session: 'Evening', time: '07:30 PM - 10:00 PM', icon: 'moon' }
   ];
 
 }
